@@ -1,0 +1,24 @@
+
+> caregiver-response-console@0.1.0 test
+> vitest run
+
+
+ RUN  v2.1.9 C:/Users/Manas/Downloads/Total Job Application process flow/projects/caregiver-response-console
+
+ ✓ src/__tests__/alertEngine.test.ts (6 tests) 5ms
+ ↓ src/__tests__/mockServer.integration.test.ts (2 tests | 2 skipped)
+ ✓ src/__tests__/alertsReducer.test.ts (5 tests) 6ms
+ ✓ src/__tests__/offlineQueue.test.ts (7 tests) 6ms
+ ✓ src/__tests__/TimestampLabel.test.tsx (6 tests) 44ms
+ ✓ src/__tests__/AlertBoard.test.tsx (2 tests) 52ms
+ ✓ src/__tests__/ClaimButton.test.tsx (5 tests) 89ms
+ ✓ src/__tests__/FilterBar.test.tsx (2 tests) 116ms
+ ✓ src/__tests__/ToastContainer.test.tsx (2 tests) 106ms
+ ✓ src/__tests__/AlertCard.test.tsx (5 tests) 183ms
+ ✓ src/__tests__/ConfirmDialog.test.tsx (2 tests) 293ms
+
+ Test Files  10 passed | 1 skipped (11)
+      Tests  42 passed | 2 skipped (44)
+   Start at  19:09:56
+   Duration  1.51s (transform 241ms, setup 1.18s, collect 1.29s, tests 900ms, environment 5.69s, prepare 1.15s)
+

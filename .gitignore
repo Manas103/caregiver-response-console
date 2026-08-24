@@ -1,0 +1,15 @@
+# Node
+node_modules/
+# regenerate with: npm run build
+dist/
+*.tsbuildinfo
+coverage/
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# local queue snapshot dumps used while manually testing the offline queue
+*.local.json

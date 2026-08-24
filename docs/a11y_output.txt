@@ -1,0 +1,64 @@
+WCAG AA check across 18 components
+
+[PASS] Header
+    ok  title: #ffffff on #0f172a, 17.85:1 (needs 3:1, 20px bold)
+    ok  user label: #ffffff on #0f172a, 17.85:1 (needs 4.5:1, 14.4px)
+[PASS] ConnectionStatusBadge
+    ok  open: #166534 on #dcfce7, 6.49:1 (needs 4.5:1, 13.6px)
+    ok  reconnecting: #92400e on #fef3c7, 6.37:1 (needs 4.5:1, 13.6px)
+    ok  closed: #991b1b on #fee2e2, 6.80:1 (needs 4.5:1, 13.6px)
+[PASS] OfflineQueueIndicator
+    ok  badge: #92400e on #fef3c7, 6.37:1 (needs 4.5:1, 13.6px)
+[PASS] FilterBar
+    ok  inactive button: #334155 on #e2e8f0, 8.40:1 (needs 4.5:1, 15.2px)
+    ok  active button: #ffffff on #1d4ed8, 6.70:1 (needs 4.5:1, 15.2px)
+    ok  filter button target: 44x44px (needs 44x44px)
+[PASS] SearchInput
+    ok  input text: #0f172a on #ffffff, 17.85:1 (needs 4.5:1, 15.2px)
+    ok  search box target: 256x44px (needs 44x44px)
+[PASS] AlertBoard
+[PASS] AlertCard
+    ok  alert type line: #475569 on #ffffff, 7.58:1 (needs 4.5:1, 14.4px)
+[PASS] ResidentInfo
+    ok  resident name: #0f172a on #ffffff, 17.85:1 (needs 4.5:1, 16px bold)
+    ok  resident room: #475569 on #ffffff, 7.58:1 (needs 4.5:1, 13.6px)
+[PASS] StateBadge
+    ok  raised: #991b1b on #fee2e2, 6.80:1 (needs 4.5:1, 12.48px bold)
+    ok  claimed: #92400e on #fef3c7, 6.37:1 (needs 4.5:1, 12.48px bold)
+    ok  confirmed: #1e40af on #dbeafe, 7.15:1 (needs 4.5:1, 12.48px bold)
+    ok  resolved: #166534 on #dcfce7, 6.49:1 (needs 4.5:1, 12.48px bold)
+[PASS] EscalationTag
+    ok  tag: #ffffff on #7f1d1d, 10.02:1 (needs 4.5:1, 12px bold)
+[PASS] TimestampLabel
+    ok  timestamp: #475569 on #ffffff, 7.58:1 (needs 4.5:1, 13.6px)
+[PASS] ClaimButton
+    ok  neutral (resolved/held-by-other): #334155 on #e2e8f0, 8.40:1 (needs 4.5:1, 15.2px)
+    ok  primary (claim/confirm): #ffffff on #1d4ed8, 6.70:1 (needs 4.5:1, 15.2px)
+    ok  destructive (resolve): #ffffff on #b91c1c, 6.47:1 (needs 4.5:1, 15.2px)
+    ok  claim button target: 44x44px (needs 44x44px)
+[PASS] ConflictBanner
+    ok  banner text: #7f1d1d on #fef2f2, 9.16:1 (needs 4.5:1, 13.6px)
+    ok  dismiss button: #7f1d1d on #fef2f2, 9.16:1 (needs 4.5:1, 13.6px bold)
+    ok  dismiss button target: 44x44px (needs 44x44px)
+[PASS] Toast
+    ok  success: #ffffff on #166534, 7.13:1 (needs 4.5:1, 16px)
+    ok  error: #ffffff on #991b1b, 8.31:1 (needs 4.5:1, 16px)
+    ok  info: #ffffff on #1e3a8a, 10.36:1 (needs 4.5:1, 16px)
+    ok  success dismiss: #ffffff on #166534, 7.13:1 (needs 4.5:1, 17.6px)
+    ok  error dismiss: #ffffff on #991b1b, 8.31:1 (needs 4.5:1, 17.6px)
+    ok  info dismiss: #ffffff on #1e3a8a, 10.36:1 (needs 4.5:1, 17.6px)
+    ok  dismiss button target: 44x44px (needs 44x44px)
+[PASS] ToastContainer
+[PASS] EmptyState
+    ok  message: #475569 on #f8fafc, 7.24:1 (needs 4.5:1, 16px)
+[PASS] LoadingSkeleton
+[PASS] ConfirmDialog
+    ok  title: #0f172a on #ffffff, 17.85:1 (needs 3:1, 24px bold)
+    ok  body text: #0f172a on #ffffff, 17.85:1 (needs 4.5:1, 16px)
+    ok  cancel button: #334155 on #e2e8f0, 8.40:1 (needs 4.5:1, 15.2px)
+    ok  confirm button: #ffffff on #b91c1c, 6.47:1 (needs 4.5:1, 15.2px)
+    ok  dialog button target: 44x44px (needs 44x44px)
+
+18/18 components pass WCAG AA contrast and target size checks.
+(node:43176) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

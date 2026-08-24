@@ -1,0 +1,405 @@
+/* Color values here are hand-mirrored from src/theme/colors.ts, which
+   scripts/check-a11y.mjs treats as the source of truth for the WCAG check.
+   Keep the two in sync: a color changed only here is not verified. */
+
+:root {
+  color-scheme: light;
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+  --app-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border: #d8dee6;
+  --text-primary: #0f172a;
+  --text-muted: #475569;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--app-bg);
+  color: var(--text-primary);
+}
+
+/* Normalize UA button/input font so every rendered text size matches the
+   rem value its class declares; scripts/check-a11y.mjs assumes this. */
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.app-header-user {
+  font-size: 0.9rem;
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.conn-badge {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.conn-open {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.conn-reconnecting {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.conn-closed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.queue-indicator {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.filter-button-active {
+  background: #1d4ed8;
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.search-input {
+  min-height: 44px;
+  min-width: 16rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  background: #ffffff;
+}
+
+.loading-skeleton {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.skeleton-card {
+  height: 9rem;
+  border-radius: 8px;
+  background: #e2e8f0;
+}
+
+.empty-state {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.alert-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+}
+
+.alert-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 6px solid #94a3b8;
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.alert-card.severity-critical {
+  border-left-color: #b91c1c;
+}
+
+.alert-card.severity-high {
+  border-left-color: #c2410c;
+}
+
+.alert-card.severity-medium {
+  border-left-color: #a16207;
+}
+
+.alert-card.severity-low {
+  border-left-color: #4d7c0f;
+}
+
+.alert-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.alert-card-badges {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.resident-info {
+  display: grid;
+}
+
+.resident-name {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.resident-room {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.alert-type {
+  margin: 0;
+  text-transform: capitalize;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.state-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.state-raised {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.state-claimed {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.state-confirmed {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.state-resolved {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.escalation-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: #7f1d1d;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.timestamp-label {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.alert-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.claim-button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.claim-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.claim-button-primary {
+  background: #1d4ed8;
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.claim-button-destructive {
+  background: #b91c1c;
+  color: #ffffff;
+  border-color: #b91c1c;
+}
+
+.conflict-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: #fef2f2;
+  color: #7f1d1d;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.conflict-dismiss {
+  min-height: 44px;
+  min-width: 44px;
+  background: #fef2f2;
+  border: none;
+  color: #7f1d1d;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.toast-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  min-width: 16rem;
+  color: #ffffff;
+}
+
+.toast-success {
+  background: #166534;
+}
+
+.toast-error {
+  background: #991b1b;
+}
+
+.toast-info {
+  background: #1e3a8a;
+}
+
+.toast-dismiss {
+  min-height: 44px;
+  min-width: 44px;
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.toast-success .toast-dismiss {
+  background: #166534;
+}
+
+.toast-error .toast-dismiss {
+  background: #991b1b;
+}
+
+.toast-info .toast-dismiss {
+  background: #1e3a8a;
+}
+
+.confirm-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.confirm-dialog {
+  background: #ffffff;
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  max-width: 26rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
