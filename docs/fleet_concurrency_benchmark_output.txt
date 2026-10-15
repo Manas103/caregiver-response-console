@@ -1,0 +1,8 @@
+requests raced: 500
+agents per request: 6
+requests with exactly 1 winner: 500
+requests with 0 winners: 0
+requests with >1 winner (duplicate claims): 0
+elapsed: 33.87s
+total claim rows: 500
+distinct requests claimed: 500

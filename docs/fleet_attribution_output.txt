@@ -1,0 +1,21 @@
+vehicles: 300
+episodes per vehicle: 8
+total episodes generated: 2400
+causes represented: 11 of 11
+total OOS minutes attributed: 159744.3
+episodes paired (out_of_service -> back_in_service): 2400
+
+cause                             minutes  episodes   share
+sensor_fault                      48674.9       327  30.47%
+cleaning_overdue                  34237.6       643  21.43%
+low_battery                       18503.5       440  11.58%
+collision_damage                  16366.7        38  10.25%
+software_fault                    11924.8       131   7.46%
+flat_tire                         10654.6       152   6.67%
+calibration_overdue                8971.6       158   5.62%
+weather_hold                       3128.9       152   1.96%
+depot_congestion                   3081.2       157   1.93%
+remote_assistance_timeout          2344.9       146   1.47%
+passenger_incident                 1855.8        56   1.16%
+
+top 3 of 11 causes (sensor_fault, cleaning_overdue, low_battery): 63.49% of total OOS minutes

@@ -1,4 +1,4 @@
-WCAG AA check across 18 components
+WCAG AA check across 24 components
 
 [PASS] Header
     ok  title: #ffffff on #0f172a, 17.85:1 (needs 3:1, 20px bold)
@@ -58,7 +58,25 @@ WCAG AA check across 18 components
     ok  cancel button: #334155 on #e2e8f0, 8.40:1 (needs 4.5:1, 15.2px)
     ok  confirm button: #ffffff on #b91c1c, 6.47:1 (needs 4.5:1, 15.2px)
     ok  dialog button target: 44x44px (needs 44x44px)
+[PASS] FleetStateBadge
+    ok  requested: #991b1b on #fee2e2, 6.80:1 (needs 4.5:1, 12.48px bold)
+    ok  claimed: #92400e on #fef3c7, 6.37:1 (needs 4.5:1, 12.48px bold)
+    ok  resolved: #166534 on #dcfce7, 6.49:1 (needs 4.5:1, 12.48px bold)
+[PASS] ReadinessBadge
+    ok  in service: #166534 on #dcfce7, 6.49:1 (needs 4.5:1, 12.48px bold)
+    ok  out of service: #991b1b on #fee2e2, 6.80:1 (needs 4.5:1, 12.48px bold)
+[PASS] FleetClaimButton
+    ok  neutral (resolved/held-by-other): #334155 on #e2e8f0, 8.40:1 (needs 4.5:1, 15.2px)
+    ok  primary (claim): #ffffff on #1d4ed8, 6.70:1 (needs 4.5:1, 15.2px)
+    ok  destructive (resolve): #ffffff on #b91c1c, 6.47:1 (needs 4.5:1, 15.2px)
+    ok  claim button target: 44x44px (needs 44x44px)
+[PASS] FleetEventCard
+    ok  reason line: #475569 on #ffffff, 7.58:1 (needs 4.5:1, 14.4px)
+[PASS] FleetEventBoard
+[PASS] CauseAttributionTable
+    ok  row text: #0f172a on #ffffff, 17.85:1 (needs 4.5:1, 14.4px)
+    ok  top-3 row text: #0f172a on #ffffff, 17.85:1 (needs 4.5:1, 14.4px bold)
 
-18/18 components pass WCAG AA contrast and target size checks.
-(node:43176) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
+24/24 components pass WCAG AA contrast and target size checks.
+(node:72944) ExperimentalWarning: Type Stripping is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)

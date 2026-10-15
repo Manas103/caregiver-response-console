@@ -195,6 +195,56 @@ const COMPONENTS = [
     ],
     targets: [{ label: "dialog button", widthPx: 44, heightPx: 44 }],
   },
+
+  // --- Fleet Event Response and Vehicle Readiness extension (Oct. 2026) ---
+  // Every new component below reuses an already-declared color token from
+  // src/theme/colors.ts; none introduces a new color, so each pair here is
+  // identical in fg/bg to a pair already checked above for a different
+  // component.
+  {
+    name: "FleetStateBadge",
+    pairs: [
+      { label: "requested", fg: colors.state.raised.text, bg: colors.state.raised.bg, sizePx: 12.48, bold: true },
+      { label: "claimed", fg: colors.state.claimed.text, bg: colors.state.claimed.bg, sizePx: 12.48, bold: true },
+      { label: "resolved", fg: colors.state.resolved.text, bg: colors.state.resolved.bg, sizePx: 12.48, bold: true },
+    ],
+    targets: [],
+  },
+  {
+    name: "ReadinessBadge",
+    pairs: [
+      { label: "in service", fg: colors.state.resolved.text, bg: colors.state.resolved.bg, sizePx: 12.48, bold: true },
+      { label: "out of service", fg: colors.state.raised.text, bg: colors.state.raised.bg, sizePx: 12.48, bold: true },
+    ],
+    targets: [],
+  },
+  {
+    name: "FleetClaimButton",
+    pairs: [
+      { label: "neutral (resolved/held-by-other)", fg: colors.neutralText, bg: colors.neutralBg, sizePx: 15.2, bold: false },
+      { label: "primary (claim)", fg: colors.primaryText, bg: colors.primaryBg, sizePx: 15.2, bold: false },
+      { label: "destructive (resolve)", fg: colors.destructiveText, bg: colors.destructiveBg, sizePx: 15.2, bold: false },
+    ],
+    targets: [{ label: "claim button", widthPx: 44, heightPx: 44 }],
+  },
+  {
+    name: "FleetEventCard",
+    pairs: [{ label: "reason line", fg: colors.textMuted, bg: colors.cardBg, sizePx: 14.4, bold: false }],
+    targets: [],
+  },
+  {
+    name: "FleetEventBoard",
+    pairs: [],
+    targets: [],
+  },
+  {
+    name: "CauseAttributionTable",
+    pairs: [
+      { label: "row text", fg: colors.textPrimary, bg: colors.cardBg, sizePx: 14.4, bold: false },
+      { label: "top-3 row text", fg: colors.textPrimary, bg: colors.cardBg, sizePx: 14.4, bold: true },
+    ],
+    targets: [],
+  },
 ];
 
 function checkComponent(component) {

@@ -13,3 +13,9 @@ Thumbs.db
 
 # local queue snapshot dumps used while manually testing the offline queue
 *.local.json
+
+# Python (fleet/): regenerate SQLite scratch databases with
+# `python -m fleet.run_attribution_measurement` / `run_concurrency_benchmark`
+__pycache__/
+.pytest_cache/
+*.pyc

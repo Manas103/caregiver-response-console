@@ -403,3 +403,26 @@ button {
   justify-content: flex-end;
   gap: 0.5rem;
 }
+
+.fleet-vehicle-id {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cause-attribution-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.cause-attribution-table th,
+.cause-attribution-table td {
+  text-align: left;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cause-row-top {
+  font-weight: 700;
+}

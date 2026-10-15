@@ -1,24 +1,28 @@
 
 > caregiver-response-console@0.1.0 test
-> vitest run
+> vitest run --run
 
 
- RUN  v2.1.9 C:/Users/Manas/Downloads/Total Job Application process flow/projects/caregiver-response-console
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90mC:/Users/Manas/Downloads/Auto Job Applier/Total Job Application process flow/projects/caregiver-response-console[39m
 
- ✓ src/__tests__/alertEngine.test.ts (6 tests) 5ms
- ↓ src/__tests__/mockServer.integration.test.ts (2 tests | 2 skipped)
- ✓ src/__tests__/alertsReducer.test.ts (5 tests) 6ms
- ✓ src/__tests__/offlineQueue.test.ts (7 tests) 6ms
- ✓ src/__tests__/TimestampLabel.test.tsx (6 tests) 44ms
- ✓ src/__tests__/AlertBoard.test.tsx (2 tests) 52ms
- ✓ src/__tests__/ClaimButton.test.tsx (5 tests) 89ms
- ✓ src/__tests__/FilterBar.test.tsx (2 tests) 116ms
- ✓ src/__tests__/ToastContainer.test.tsx (2 tests) 106ms
- ✓ src/__tests__/AlertCard.test.tsx (5 tests) 183ms
- ✓ src/__tests__/ConfirmDialog.test.tsx (2 tests) 293ms
+ [32m✓[39m src/__tests__/alertEngine.test.ts [2m([22m[2m6 tests[22m[2m)[22m[90m 6[2mms[22m[39m
+ [2m[90m↓[39m[22m src/__tests__/mockServer.integration.test.ts [2m([22m[2m2 tests[22m[2m | [22m[33m2 skipped[39m[2m)[22m
+ [32m✓[39m src/__tests__/fleetEngine.test.ts [2m([22m[2m6 tests[22m[2m)[22m[90m 16[2mms[22m[39m
+ [32m✓[39m src/__tests__/alertsReducer.test.ts [2m([22m[2m5 tests[22m[2m)[22m[90m 10[2mms[22m[39m
+ [32m✓[39m src/__tests__/offlineQueue.test.ts [2m([22m[2m7 tests[22m[2m)[22m[90m 45[2mms[22m[39m
+ [32m✓[39m src/__tests__/TimestampLabel.test.tsx [2m([22m[2m6 tests[22m[2m)[22m[90m 84[2mms[22m[39m
+ [32m✓[39m src/__tests__/CauseAttributionTable.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 177[2mms[22m[39m
+ [32m✓[39m src/__tests__/ClaimButton.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[90m 159[2mms[22m[39m
+ [32m✓[39m src/__tests__/AlertBoard.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 80[2mms[22m[39m
+ [32m✓[39m src/__tests__/FleetEventBoard.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[90m 97[2mms[22m[39m
+ [32m✓[39m src/__tests__/ToastContainer.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 177[2mms[22m[39m
+ [32m✓[39m src/__tests__/FilterBar.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[90m 209[2mms[22m[39m
+ [32m✓[39m src/__tests__/ConfirmDialog.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[33m 336[2mms[22m[39m
+ [32m✓[39m src/__tests__/FleetEventCard.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[90m 288[2mms[22m[39m
+ [32m✓[39m src/__tests__/AlertCard.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 312[2mms[22m[39m
 
- Test Files  10 passed | 1 skipped (11)
-      Tests  42 passed | 2 skipped (44)
-   Start at  19:09:56
-   Duration  1.51s (transform 241ms, setup 1.18s, collect 1.29s, tests 900ms, environment 5.69s, prepare 1.15s)
+[2m Test Files [22m [1m[32m14 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (15)[39m
+[2m      Tests [22m [1m[32m58 passed[39m[22m[2m | [22m[33m2 skipped[39m[90m (60)[39m
+[2m   Start at [22m 18:30:42
+[2m   Duration [22m 4.56s[2m (transform 796ms, setup 6.74s, collect 5.27s, tests 2.00s, environment 33.99s, prepare 4.67s)[22m
 
